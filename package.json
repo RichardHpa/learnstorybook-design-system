@@ -1,6 +1,6 @@
 {
   "name": "learnstorybook-design-system",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
     "@storybook/addon-a11y": "^5.3.18",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-docs": "^5.3.18",
@@ -48,6 +49,30 @@
     "@storybook/addons": "^5.3.18",
     "@storybook/preset-create-react-app": "^2.1.2",
     "@storybook/react": "^5.3.18",
-    "chromatic": "^4.0.2"
-  }
+    "auto": "^9.33.2",
+    "chromatic": "^4.0.2",
+    "cross-env": "^7.0.2"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "description": "Learning how to use storybook as documentation for a design system.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichardHpa/learnstorybook-design-system.git"
+  },
+  "keywords": [
+    "design",
+    "system",
+    "storybook"
+  ],
+  "author": "Richard Hpa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RichardHpa/learnstorybook-design-system/issues"
+  },
+  "homepage": "https://github.com/RichardHpa/learnstorybook-design-system#readme"
 }
