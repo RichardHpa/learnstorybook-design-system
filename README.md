@@ -12,3 +12,10 @@ cd learnstorybook-design-system
 
 npm install
 ```
+
+## Running Storybook
+
+```bash
+# Storybook will open on localhost:9009
+npm run storybook
+```
